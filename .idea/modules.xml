@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/disqo-php-assessment.iml" filepath="$PROJECT_DIR$/.idea/disqo-php-assessment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../laravel_v8_example/.idea/laravel_v8_example.iml" filepath="$PROJECT_DIR$/../laravel_v8_example/.idea/laravel_v8_example.iml" />
+    </modules>
+  </component>
+</project>
