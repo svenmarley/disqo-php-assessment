@@ -17,3 +17,13 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+JsonApi::register('default')->routes( function ($api) {
+    $api->resource( 'users')->relationships( function( $relations ) {
+        $relations->hasMany( 'notes' );
+    });
+    $api->resource( 'notes')->relationships( function( $relations ) {
+        $relations->hasOne( 'users' );
+    });
+
+});

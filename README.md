@@ -7,5 +7,9 @@ The first commit is just about the Laravel project, with Sail to manage the DOCK
 
 I kept a running detais diary [here](https://docs.google.com/document/d/1KDEya5d9SrYfhfqFuuRRotMwDp0-2llHWh2hkX7M4OE/edit?usp=sharing) with information about exactly what I did and the time that I spent on the project.  This is done for full discloser of my Sr. Developer skills.
 
-THe first step is to create the **notes** tables with seed data.
+The first step is to create the **notes** tables with seed data.
+
+Used the laravel-json-api project to handle the API routing.
+
+
 
