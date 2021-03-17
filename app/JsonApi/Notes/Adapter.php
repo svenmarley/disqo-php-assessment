@@ -6,9 +6,11 @@ use CloudCreativity\LaravelJsonApi\Eloquent\AbstractAdapter;
 use CloudCreativity\LaravelJsonApi\Pagination\StandardStrategy;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Log;
 
 class Adapter extends AbstractAdapter
 {
+    protected string $sFunc = 'Notes.Adapter';
 
     /**
      * Mapping of JSON API attribute field names to model keys.
@@ -43,6 +45,14 @@ class Adapter extends AbstractAdapter
     {
         $this->filterWithScopes($query, $filters);
     }
+
+    protected function xdeserializeUserIdField( $value ) {
+        $sFunc = $this->sFunc . '.deserializeUserIdField()-->';
+
+        Log::channel('debug')->debug( $sFunc . 'inside  value',[$value]);
+        return( $value * 1 );
+    }
+
 
     public function user(){
         return $this->hasOne();

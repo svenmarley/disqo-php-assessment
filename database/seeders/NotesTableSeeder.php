@@ -18,10 +18,11 @@ class NotesTableSeeder extends Seeder
 
         $faker = \Faker\Factory::create();
 
-        for( $i = 0; $i < 20; $i++ ) {
+        for( $i = 0; $i < 10; $i++ ) {
             Note::create( [
-                'Title' => $faker->text( 50),
-                'Note' => $faker->paragraph()
+                'title' => $faker->text( 50),
+                'note' => $faker->paragraph(),
+                'user_id' => ( $i % 5 ) + 1
             ]);
         }
     }

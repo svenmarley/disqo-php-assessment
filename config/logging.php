@@ -42,9 +42,9 @@ return [
         ],
 
         'debug' => [
-            'driver' => 'debug',
+            'driver' => 'single',
             'path' => storage_path('logs/debug.log'),
-            'level' => env('LOG_LEVEL', 'debug'),
+            'level' => env('LOG_LEVEL', 'info'),
 
         ],
 
